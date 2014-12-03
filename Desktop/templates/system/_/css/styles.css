@@ -1,0 +1,512 @@
+/* System Page Styles*/
+.system_title {
+  float: left;
+}
+
+.system_buttons {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+}
+.system_buttons li {
+  float: left;
+  list-style: none;
+  margin-left: 5px;
+}
+.system_buttons a {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  display: block;
+  background: #f6f6f6;
+}
+.system_buttons a:hover {
+  opacity: 0.5;
+}
+
+.system_toggle_advanced {
+  float: right;
+  clear: right;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.system_advanced {
+  display: none;
+}
+
+.system_controls {
+  clear: both;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  background: #f6f6f6;
+  font-size: 14px;
+}
+
+.system_option, .system_option > * {
+  max-width: 100%;
+}
+
+.system_body {
+  margin-top: 15px;
+  clear: both;
+}
+
+.system_table {
+  clear: both;
+  display: table;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.system_row {
+  display: table-row;
+}
+
+.system_column {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  background: #f6f6f6;
+  vertical-align: top;
+}
+
+/* Calendar Page Styles*/
+#calendar_title select {
+  vertical-align: top;
+  font-size: x- 18px;
+  margin-left: -3px;
+}
+#calendar_title input {
+  margin-top: 10px;
+}
+
+.calendar {
+  width: 100%;
+  display: table;
+}
+
+.calendar_days_header, .calendar_day_title {
+  font-weight: bold;
+}
+
+.calendar_week, .calendar_days_header {
+  width: 100%;
+  display: table-row;
+}
+
+.calendar_week {
+  height: 70px;
+  font-size: 14px;
+}
+
+.calendar_day_wrapper, .calendar_day_header {
+  display: table-cell;
+  width: 14%;
+  min-width: 100px;
+  border: 1px solid #ffffff;
+  background: #f6f6f6;
+  padding: 5px;
+}
+
+.calendar_day_header {
+  text-align: center;
+}
+
+.calendar_month {
+  display: none;
+}
+
+.calendar_month_first_day {
+  display: inline;
+}
+
+.calendar_day_other_month, .calendar_day_wrapper_other_month {
+  background: #eeeeee;
+}
+
+.calendar_day_today {
+  background: #fafafa;
+}
+
+.calendar_event_all_day {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  background: #fafafa;
+}
+
+#calendar_no_events {
+  display: none;
+}
+
+@media screen and (max-width: 860px) {
+  .calendar_days_header {
+    display: none;
+  }
+
+  .calendar {
+    display: block;
+  }
+
+  .calendar_week {
+    display: table;
+  }
+
+  .calendar_day {
+    display: table-cell;
+    border: 1px solid #ffffff;
+    padding: 5px;
+  }
+
+  .calendar_day_wrapper {
+    display: table-row;
+    height: 70px;
+    font-size: 16px;
+  }
+
+  .calendar_day_wrapper_empty, .calendar_week_empty {
+    display: none;
+  }
+
+  .calendar_day_title {
+    padding-bottom: 5px;
+  }
+
+  .calendar_month {
+    display: inline;
+  }
+
+  #calendar_no_events {
+    display: block;
+    background: #f6f6f6;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #calendar_buttons {
+    margin-top: 10px;
+  }
+
+  #calendar_buttons, #calendar_toggle_advanced {
+    float: left;
+    clear: both;
+  }
+
+  #calendar_title {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .calendar_title select {
+    font-size: 20px;
+  }
+
+  .calendar_title input {
+    margin-top: 8px;
+  }
+}
+/* Media Styles*/
+#media_title h1 {
+  margin: 0px 0px 10px 0px;
+}
+
+.media_option_left {
+  float: left;
+  margin-right: 10px;
+}
+
+.media_option_right {
+  float: right;
+  margin-left: 10px;
+}
+
+.media_option_right a {
+  margin-top: 5px;
+  display: block;
+}
+
+.media_option_new_row {
+  clear: both;
+}
+
+#media_controls {
+  overflow: auto;
+}
+
+.media_recording_file {
+  display: block;
+}
+
+.media_recording_file a, .media_recording_file div {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.media_recording_file_format {
+  font-size: 14px;
+}
+
+.media_recording_title {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.media_recording_speaker {
+  display: inline-block;
+  float: right;
+}
+
+.media_recording_descr {
+  padding: 5px 0px 5px 0px;
+  font-size: 14px;
+}
+
+.media_recording_extra ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  white-space: nowrap;
+}
+
+ul.media_recording_details {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.media_summary_image {
+  padding: 0px;
+  vertical-align: middle;
+}
+
+.media_pager {
+  display: inline-block;
+}
+
+#media_sort {
+  display: inline-block;
+  float: right;
+  margin-bottom: 10px;
+}
+
+@media (700px) {
+  .media_recording_extra {
+    display: none;
+  }
+}
+@media (500px) {
+  .media_recording_speaker {
+    display: none;
+  }
+
+  .media_recording_file a {
+    font-size: 14px;
+  }
+
+  .media_recording_file_format {
+    font-size: 10px;
+  }
+}
+/* Address Book Styles*/
+.address_user_first_name, .family_title {
+  background: #fdfdfd;
+}
+
+.address_user_detail {
+  display: block;
+  padding: 5px;
+}
+
+.address_phone_number {
+  display: inline-block;
+}
+
+.address_family_detail {
+  padding: 5px;
+  display: inline-block;
+  float: left;
+}
+
+.address_family_address, .family_title_child {
+  clear: left;
+}
+
+.address_family_phone {
+  float: right;
+}
+
+.address_user_image {
+  float: right;
+  margin-right: -115px;
+}
+
+.address_user_details {
+  overflow: hidden;
+}
+
+.address_user_details_empty {
+  display: none;
+}
+
+.address_user_details_has_image {
+  padding-right: 110px;
+}
+
+.address_family_address, .family_title_child {
+  margin-right: 30px;
+}
+
+.address_family_address_empty {
+  margin-right: 0px;
+}
+
+.address_family_image {
+  clear: right;
+  float: right;
+  margin-top: 10px;
+}
+
+.address_user_image > img, .address_family_image > img {
+  width: 100px;
+}
+
+@media (700px) {
+  .address_row {
+    display: table;
+    width: 100%;
+  }
+
+  .address_column {
+    display: table-row;
+  }
+
+  .address_cell {
+    display: table-cell;
+    border: 1px solid #ffffff;
+    padding: 10px;
+  }
+
+  .address_user_details_empty {
+    display: block;
+  }
+
+  .family_title_child {
+    display: none;
+  }
+
+  .address_family_details_cell {
+    border-bottom: none;
+    padding-bottom: 5px;
+  }
+
+  .address_user_details_cell {
+    border-top: none;
+    padding-top: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .address_family_image, .address_user_image {
+    display: none;
+  }
+
+  .address_user_details_has_image {
+    padding-right: 0px;
+  }
+
+  .address_family_phone {
+    float: left;
+    clear: left;
+  }
+
+  .address_user_detail {
+    font-size: 12px;
+  }
+
+  .address_user_first_name {
+    font-size: inherit;
+  }
+}
+/* Search Styles*/
+.search_option_left {
+  float: left;
+  margin-right: 10px;
+}
+
+.search_option_right {
+  float: right;
+  margin-left: 10px;
+}
+
+.search_article_title, .search_event_title {
+  float: left;
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.search_article_author, .search_event_location, .search_forum_user_name {
+  float: right;
+  margin-bottom: 5px;
+}
+
+.search_article_more {
+  margin-top: 5px;
+}
+
+.search_forum_user_name {
+  margin: 5px;
+}
+
+.search_article_summary, .search_event_details {
+  clear: both;
+}
+
+.search_article_more {
+  float: right;
+}
+
+.search_article_image, .search_event_image {
+  padding: 0px;
+  width: 0px;
+}
+
+.system_date_column {
+  width: 80px;
+}
+
+@media (max-width: 500px) {
+  .system_date_column {
+    font-size: 12px;
+    width: 60px;
+  }
+
+  .search_article_author, .search_event_location {
+    float: left;
+  }
+
+  .search_result_count {
+    display: block;
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .search_article_title, .search_event_title {
+    font-size: 16px;
+  }
+
+  .search_event_details, .search_forum_user_name, .search_article_summary {
+    font-size: 14px;
+  }
+
+  .search_result_count {
+    display: none;
+  }
+}

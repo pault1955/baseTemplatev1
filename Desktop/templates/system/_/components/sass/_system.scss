@@ -1,0 +1,525 @@
+/* System Page Styles*/
+.system_title {
+    float: left;
+}
+
+.system_buttons {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+  
+    li {
+        float: left;
+        list-style: none;
+        margin-left: 5px;
+    }
+
+    a {
+        padding: 5px;
+        border: 1px solid $system-controls-border;
+        display: block;
+        background: $system-background;
+    }
+
+    a:hover {
+        opacity: 0.5;
+    }
+}
+.system_toggle_advanced {
+    float: right;
+    clear: right;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: $font-small;
+}
+
+.system_advanced {
+    display: none;
+}
+
+.system_controls {
+    clear: both;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid $system-controls-border;
+    background: $system-background;
+    font-size: $font-small;
+}
+
+.system_option, .system_option > * {
+    max-width: 100%;
+}
+      
+.system_body {
+    margin-top: 15px;
+    clear: both;
+}
+
+.system_table {
+    clear: both;
+    display: table;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.system_row {
+    display: table-row;
+}
+
+.system_column {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid $system-columns-border;
+    background: $system-background;
+    vertical-align: top;
+}
+/* Calendar Page Styles*/
+#calendar_title {
+        select {
+            vertical-align: top;
+            font-size: x-$font-large;
+            margin-left: -3px;
+        }
+        input {
+            margin-top:10px;
+        }
+}
+.calendar {
+    width: 100%;
+    display: table;
+}
+
+.calendar_days_header, .calendar_day_title {
+    font-weight: bold;
+}
+
+.calendar_week, .calendar_days_header {
+    width: 100%;
+    display: table-row;
+}
+.calendar_week {
+    height: 70px;
+    font-size: $font-small;
+}
+      
+.calendar_day_wrapper, .calendar_day_header {
+    display: table-cell;
+    width: 14%;
+    min-width: 100px;
+    border: 1px solid $system-calendar-border;
+    background: $system-background;
+    padding: 5px;
+}
+
+.calendar_day_header {
+    text-align: center;
+}
+
+.calendar_month {
+    display: none;
+}
+
+.calendar_month_first_day {
+    display: inline;
+}
+
+.calendar_day_other_month, .calendar_day_wrapper_other_month {
+    background: $system-calendar-other-month-background;
+}
+
+.calendar_day_today {
+    background: $system-calendar-today-background;
+}
+
+.calendar_event_all_day {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    background: $system-calendar-today-background;
+}
+
+#calendar_no_events {
+    display: none;
+}
+
+@media screen and (max-width: $breakpoint-1) {
+    .calendar_days_header {
+        display: none;
+    }
+
+    .calendar {
+        display: block;
+    }
+
+    .calendar_week {
+        display: table;
+    }
+
+    .calendar_day {
+        display: table-cell;
+        border: 1px solid $system-calendar-border;
+        padding: 5px;
+    }
+
+    .calendar_day_wrapper {
+        display: table-row;
+        height: 70px;
+        font-size: $font-medium;  
+    }
+
+    .calendar_day_wrapper_empty, .calendar_week_empty {
+        display: none;
+    }
+
+    .calendar_day_title {
+        padding-bottom: 5px;
+    }
+
+    .calendar_month {
+        display: inline;
+    }
+
+    #calendar_no_events {
+        display: block;
+        background: $system-background;
+        text-align: center;
+        padding: 10px;
+        font-size: $font-larger;
+    }
+}
+
+@media screen and (max-width: $breakpoint-3) {
+    #calendar_buttons {
+        margin-top: 10px;
+    }
+    #calendar_buttons, #calendar_toggle_advanced {
+        float: left;
+        clear: both;
+    }
+
+    #calendar_title {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $breakpoint-4) {
+    .calendar_title select {
+        font-size: $font-larger;
+    }
+
+	.calendar_title input {
+	    margin-top: 8px;
+	}
+}
+
+
+/* Media Styles*/
+#media_title h1 {
+    margin: 0px 0px 10px 0px;
+}
+
+.media_option_left {
+    float: left;
+    margin-right: 10px;
+}
+
+.media_option_right {
+    float: right;
+    margin-left: 10px;
+}
+
+.media_option_right a {
+    margin-top: 5px;
+    display: block;
+}
+
+.media_option_new_row {
+    clear: both;
+}
+
+#media_controls {
+    overflow: auto;
+}
+
+.media_recording_file {
+    display: block;
+}
+
+.media_recording_file a, .media_recording_file div {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.media_recording_file_format {
+    font-size: $font-small;
+}
+
+.media_recording_title {
+   display: inline-block;
+   font-weight: bold;
+   font-size: $font-large;
+}
+
+.media_recording_speaker {
+    display: inline-block;
+    float: right;
+}
+
+.media_recording_descr {
+    padding: 5px 0px 5px 0px;
+    font-size: $font-small;
+}
+
+.media_recording_extra ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap;
+}
+
+ul.media_recording_details {
+    margin-top: 5px;
+    font-size: $font-small;
+}
+
+.media_summary_image {
+    padding: 0px;
+    vertical-align: middle;
+}
+
+.media_pager {
+    display: inline-block;
+}
+
+#media_sort {
+    display: inline-block;
+    float: right;
+    margin-bottom: 10px;
+}
+
+@media ($breakpoint-2) {
+    .media_recording_extra {
+        display: none;
+    }
+}
+
+@media ($breakpoint-3) {
+    .media_recording_speaker {
+       display: none;
+    }
+
+    .media_recording_file a {
+       font-size: $font-small;
+    }
+
+    .media_recording_file_format {
+       font-size: $font-x-small;
+    }
+}
+
+
+
+/* Address Book Styles*/
+.address_user_first_name, .family_title {
+    background:$system-address-user-background;
+}
+
+.address_user_detail {
+    display: block;
+    padding: 5px;
+}
+
+.address_phone_number {
+    display: inline-block;
+}
+
+.address_family_detail {
+    padding: 5px;
+    display: inline-block;
+    float: left;
+}
+
+.address_family_address, .family_title_child {
+    clear: left;
+}
+
+.address_family_phone {
+    float: right;
+}
+
+.address_user_image {
+    float: right;
+    margin-right: -115px;
+}
+
+.address_user_details {
+    overflow: hidden;
+}
+
+.address_user_details_empty {
+    display: none;
+}
+
+.address_user_details_has_image {
+    padding-right: 110px;
+}
+
+.address_family_address, .family_title_child {
+    margin-right: 30px;
+}
+
+.address_family_address_empty {
+    margin-right: 0px;
+}
+
+.address_family_image {
+    clear: right;
+    float: right;
+    margin-top: 10px;
+}
+
+.address_user_image > img, .address_family_image > img  {
+    width: 100px;
+}
+
+@media ($breakpoint-2) {
+    .address_row {
+        display: table;
+        width: 100%;
+    }
+
+    .address_column {
+        display: table-row;
+    }
+
+    .address_cell {
+        display: table-cell;
+        border: 1px solid $system-border;
+        padding: 10px;
+    }
+
+    .address_user_details_empty {
+        display: block;
+    }
+
+    .family_title_child {
+        display: none;
+    }
+
+    .address_family_details_cell {
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+    
+    .address_user_details_cell {
+        border-top: none;
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: $breakpoint-3) {
+    .address_family_image, .address_user_image {
+        display: none;
+    }
+
+    .address_user_details_has_image {
+        padding-right: 0px;
+    }
+
+    .address_family_phone {
+        float: left;
+        clear: left;
+    }
+
+    .address_user_detail {
+        font-size: $font-smaller;
+    }
+
+    .address_user_first_name {
+        font-size: inherit;
+    }
+}
+
+
+
+/* Search Styles*/
+.search_option_left {
+    float: left;
+    margin-right: 10px;
+}
+
+.search_option_right {
+    float: right;
+    margin-left: 10px;
+}
+
+.search_article_title, .search_event_title {
+    float: left;
+    font-size: $font-large;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.search_article_author, .search_event_location, .search_forum_user_name {
+    float: right;
+    margin-bottom: 5px;
+}
+
+.search_article_more {
+    margin-top: 5px;
+}
+
+.search_forum_user_name {
+    margin: 5px;
+}
+
+.search_article_summary, .search_event_details {
+    clear: both;
+}
+
+.search_article_more {
+    float: right;
+}
+
+.search_article_image, .search_event_image {
+    padding: 0px;
+    width: 0px;
+}
+
+.system_date_column {
+    width: 80px;
+}
+
+@media (max-width: $breakpoint-3) {
+    .system_date_column {
+        font-size: $font-smaller;
+        width: 60px;
+    }
+
+    .search_article_author, .search_event_location {
+        float: left;
+    }
+
+    .search_result_count {
+        display: block;
+        font-size: $font-smaller;
+    }
+}
+
+@media (max-width: $breakpoint-4) {
+    .search_article_title, .search_event_title {
+        font-size: $font-medium;
+    }
+
+    .search_event_details, .search_forum_user_name, .search_article_summary {
+        font-size: $font-small;
+    }
+
+    .search_result_count {
+        display: none;
+    }
+}

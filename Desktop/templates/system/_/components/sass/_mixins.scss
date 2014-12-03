@@ -1,0 +1,11 @@
+@mixin link-color( $link-color, $link-color-hover, $link-size, $link-decoration, $link-decoration-hover) {
+    &:link, &:visited, &:hover, &:active {
+  		color: $link-color;
+  		font-size: $link-size;
+  		text-decoration: $link-decoration;
+  	}
+  	&:hover {
+  		color: $link-color-hover;
+  	 	text-decoration: $link-decoration-hover;
+  	}
+}
