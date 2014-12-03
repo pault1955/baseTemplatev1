@@ -1,4 +1,8 @@
 /* System Page Styles*/
+
+.systemPageContent {
+    background-color: $system-page-content-background;
+}
 .system_title {
     float: left;
 }
@@ -78,6 +82,15 @@
     vertical-align: top;
 }
 /* Calendar Page Styles*/
+/* calendar - the whole month */
+/* calendar_days_header is a header days row on the calendar */
+/* calendar_week is a row on the calendar */
+/* calendar_day_wrapper is an individual day in the calendar */
+
+
+.calendar_body {
+    background-color: $system-calendar-background;
+}
 #calendar_title {
         select {
             vertical-align: top;
@@ -93,42 +106,82 @@
     display: table;
 }
 
-.calendar_days_header, .calendar_day_title {
+.calendar_days_header  {
     font-weight: bold;
-}
-
-.calendar_week, .calendar_days_header {
     width: 100%;
     display: table-row;
+    color: $system-calendar-day-header-color;
+    background-color: $system-calendar-day-header-background;
+
+    .calendar_day_header {
+        display: table-cell;
+        width: 14%;
+        min-width: 100px;
+        border: 1px solid $system-calendar-day-wrapper-border;
+        background: $system-calendar-day-wrapper-background;
+        padding: 5px;
+    }
 }
+
 .calendar_week {
+    width: 100%;
+    display: table-row;
     height: 70px;
     font-size: $font-small;
 }
       
-.calendar_day_wrapper, .calendar_day_header {
+.calendar_day_wrapper {
     display: table-cell;
     width: 14%;
     min-width: 100px;
-    border: 1px solid $system-calendar-border;
-    background: $system-background;
+    border: 1px solid $system-calendar-day-wrapper-border;
+    background: $system-calendar-day-wrapper-background;
     padding: 5px;
 }
 
+.calendar_day {
+ 
+
+    .calendar_day_title {
+        font-weight: bold;
+
+        .calendar_month {
+            display: none;
+        }
+        .calendar_month_first_day {
+            display: inline;
+        }
+    }
+    
+    .calendar_events {
+    
+        .calendar_event {
+            
+            a {
+
+            }
+
+         }
+
+    }
+}
 .calendar_day_header {
     text-align: center;
 }
 
-.calendar_month {
-    display: none;
+.calendar_day_wrapper_weekend {
+    background-color: $system-calendar-weekend-wrapper-background;
+
+    .calendar_day_weekend {
+
+    }
 }
 
-.calendar_month_first_day {
-    display: inline;
-}
-
-.calendar_day_other_month, .calendar_day_wrapper_other_month {
-    background: $system-calendar-other-month-background;
+.calendar_day_wrapper_other_month {
+     background-color: $system-calendar-day-other-month-background;
+    .calendar_day_other_month {
+        
+    }
 }
 
 .calendar_day_today {
@@ -139,7 +192,7 @@
     text-align: center;
     font-weight: bold;
     padding: 5px;
-    background: $system-calendar-today-background;
+    background: $system-calendar-event-all-day-background;
 }
 
 #calendar_no_events {

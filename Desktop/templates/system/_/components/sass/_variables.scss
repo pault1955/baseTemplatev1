@@ -16,15 +16,26 @@ $font-large				: 18px;
 $font-larger			: 20px;
 $font-x-large			: 24px;
 
-
-$system-background      : #f6f6f6;
-$system-controls-border	: #ffffff;
-$system-columns-border	: #ffffff;
-$system-border			: #ffffff;
+// system global
+$system-page-content-background	: #f6f6f6;
+$system-background      		: #f6f6f6;
+$system-controls-border			: #ffffff;
+$system-columns-border			: #ffffff;
+$system-border					: #ffffff;
 
 // calendar
 
-$system-calendar-other-month-background		: #eeeeee;
+$system-calendar-background					: #f6f6f6;
+$system-calendar-day-header-background		: #f6f6f6;
+$system-calendar-day-header-color			: #7d8891;
+$system-calendar-day-wrapper-background		: #f6f6f6;
+$system-calendar-day-wrapper-border			: #ffffff;
+
+$system-calendar-weekend-wrapper-background	: #f6f6f6;
+
+$system-calendar_day_other_month-background	: #eeeeee;
+
+
 $system-calendar-today-background			: #fafafa;
 $system-calendar-event-all-day-background	: #fafafa;
 $system-calendar-border						: #ffffff;
@@ -32,3 +43,8 @@ $system-calendar-border						: #ffffff;
 // address
 
 $system-address-user-background				: #fdfdfd;
+
+// forums
+
+// media
+
