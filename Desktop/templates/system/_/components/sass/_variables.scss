@@ -17,11 +17,20 @@ $font-larger			: 20px;
 $font-x-large			: 24px;
 
 // system global
-$system-page-content-background	: #f6f6f6;
-$system-background      		: #f6f6f6;
+$system-page-content-background	: #ffffff;
+$system-background      		: #ffffff;
 $system-controls-border			: #ffffff;
 $system-columns-border			: #ffffff;
 $system-border					: #ffffff;
+$system-links					: #317ade;
+$system-links-underline			: #ffffff;
+$system-links-hover			    : #000000;
+$system-links-underline-hover   : #ffffff;
+$system-textarea-border			: #aaaaaa;
+$system-textarea-focus-shadow	: #317ade;
+$system-popup-window-background : #ffffff;
+$system-popup-window-title		: #317ade;
+
 
 // calendar
 
@@ -46,5 +55,21 @@ $system-address-user-background				: #fdfdfd;
 
 // forums
 
+$system-forum-gridheader-color				: #52525a;
+$system-griditem-background					: #eef7fb;
+$system-altgriditem-background				: #eef7fb;
+$system-griditem-border						: #333333;
+$system-altgriditem-border					: #333333;
 // media
 
+// my area
+
+$system-myarea-background					: #999999;
+$system-profile-background					: #eef7fb;
+$system-profile-tabselected-background		: #eef7fb;
+$system-profile-tab-background				: #ffffff;
+$system-profile-tabselected-border			: #eef7fb;
+$system-profile-tab-border					: #ffffff;
+$system-profile-tabselected-color			: #31a7de;
+$system-profile-tab-color					: #31a7de;
+$system-profile-tab-color-hover				: #31a7de;

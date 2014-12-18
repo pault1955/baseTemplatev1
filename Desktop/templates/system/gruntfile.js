@@ -24,7 +24,7 @@ grunt.loadNpmTasks('grunt-contrib-compass');
                 '_/components/css/styles.css': '_/components/sass/styles.scss'
                },
                options: {
-                  sourcemap:'true'
+                  sourcemap:'auto'
                } // options
              }   // dist
           }, // sass
